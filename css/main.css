@@ -1,0 +1,169 @@
+/*Demo styles*/
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background:#007aff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    /*text-align: center;*/
+    /*font-size: 18px;*/
+    background: url("../img/twobg.jpg");
+
+    /* Center slide text vertically */
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+/*音乐开始*/
+#mss{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 10px;
+    top:10px;
+    z-index: 1;
+    
+}
+#mss .musimg{
+    width: 60px;
+    height: 60px;
+}
+#mss .musdg{
+     position: absolute;
+     right: 8px;
+     top:  8px;
+     animation: ms 1s linear infinite;
+}
+@keyframes ms{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+}
+}
+/*音乐结束*/
+.swiper-button-next{
+    position: absolute;
+    top:auto;
+    bottom:2%;
+    left: 45%;
+    transform: rotate(-90deg)
+}
+/*第一屏*/
+.swiper-slide.one{
+    background: url("../img/onebg.jpg");
+    background-size: 100% 100%;
+}
+.swiper-slide.one .top{
+    width: 70%;
+    height: 50%;
+    border: 10px solid #fff;
+    position: absolute;
+    top: 7%;
+    right: 12.5%;
+    overflow:hidden
+
+}
+.swiper-slide.one .top img{
+    width:100%;
+}
+.swiper-slide.one .mutton{
+    width: 80%;
+    height: 25%;
+    position: absolute;
+    bottom:12%;
+    right:10%;
+}
+.swiper-slide.one .mutton img:nth-child(1){
+      width: 25%;
+      position: absolute;
+      left:30px;
+      top: 20px;
+
+}
+.swiper-slide.one .mutton img:nth-child(2){
+    width: 100%;
+    position: absolute;
+    bottom:5px;
+    left: 2px;
+}
+.swiper-slide.one .buttom{
+    width: 70%;
+    height: 10%;
+    position: absolute;
+    left: 15%;
+    bottom:3.5%;
+
+}
+.swiper-slide.one .buttom p{
+    font-size: 10vw;
+    align-content: center;
+    position: absolute;
+    bottom:1%;
+    left: 12%;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.5);
+    font-family:微软雅黑;
+}
+/*第一屏结束*/
+/*第二屏开始*/
+.swiper-slide.two .top1{
+    width:40%;
+    height: 25%;
+    border: 5px solid #fff;
+    position: absolute;
+    top:10%;
+    left: 10%;
+    overflow: hidden;
+
+}
+.swiper-slide.two .bottom{
+    width:40%;
+    height: 25%;
+    border: 5px solid #fff;
+    position: absolute;
+    bottom:10%;
+    right: 10%;
+    overflow: hidden;
+
+}
+.swiper-slide.two .center{
+    width:60%;
+    height: 30%;
+    border: 5px solid #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+
+}
+.swiper-slide.two img{
+    width: 100%;
+}
+.swiper-slide.two .center img{
+
+
+}
+/*第二屏结束*/
